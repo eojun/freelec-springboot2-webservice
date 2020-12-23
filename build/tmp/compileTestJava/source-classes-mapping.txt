@@ -1,0 +1,10 @@
+com/arendelle/book/springboot/web/dto/HelloResponseDtoTest.java
+ com.arendelle.book.springboot.web.dto.HelloResponseDtoTest
+com/arendelle/book/springboot/HelloControllerTest.java
+ com.arendelle.book.springboot.HelloControllerTest
+com/arendelle/book/springboot/web/PostsApiControllerTest.java
+ com.arendelle.book.springboot.web.PostsApiControllerTest
+com/arendelle/book/springboot/domain/posts/PostRepositoryTest.java
+ com.arendelle.book.springboot.domain.posts.PostRepositoryTest
+com/arendelle/book/springboot/web/IndexControllerTest.java
+ com.arendelle.book.springboot.web.IndexControllerTest
