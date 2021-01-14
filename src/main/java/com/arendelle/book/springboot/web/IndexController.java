@@ -1,5 +1,7 @@
 package com.arendelle.book.springboot.web;
 
+import com.arendelle.book.springboot.config.auth.LoginUser;
+import com.arendelle.book.springboot.config.auth.dto.SessionUser;
 import com.arendelle.book.springboot.service.posts.PostsService;
 import com.arendelle.book.springboot.web.dto.PostsResponseDto;
 import lombok.Getter;
@@ -17,8 +19,13 @@ public class IndexController {
     private final PostsService postsService;
 
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
         model.addAttribute("posts", postsService.findAllDesc());
+
+        if(user!=null){
+            model.addAttribute("userName", user.getName());
+        }
+
         return "index";
     }
 
